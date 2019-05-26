@@ -116,7 +116,7 @@ public class RetailStoreDiscountControllerTests {
 			String content = response.getContentAsString();
 			OrderResponse responseObject = this.mapFromJson(content, OrderResponse.class);
 			System.out.println("Create Order responseObject: " + responseObject.toString());
-			printBill(responseObject);
+			printBill(responseObject, "If the user is an employee of the store, he gets a 30% discount.");
 			assertEquals(1400.00, responseObject.getGrandTotal(), 0.0001);
 		} catch (Exception e) {
 			fail();
@@ -141,7 +141,7 @@ public class RetailStoreDiscountControllerTests {
 			String content = response.getContentAsString();
 			OrderResponse responseObject = this.mapFromJson(content, OrderResponse.class);
 			System.out.println("Create Order responseObject: " + responseObject.toString());
-			printBill(responseObject);
+			printBill(responseObject, "If the user is an affiliate of the store, he gets a 10% discount.");
 			assertEquals(3150.00, responseObject.getGrandTotal(), 0.0001);
 		} catch (Exception e) {
 			fail();
@@ -166,7 +166,7 @@ public class RetailStoreDiscountControllerTests {
 			String content = response.getContentAsString();
 			OrderResponse responseObject = this.mapFromJson(content, OrderResponse.class);
 			System.out.println("Create Order responseObject: " + responseObject.toString());
-			printBill(responseObject);
+			printBill(responseObject, "If the user has been a customer for over 2 years, he gets a 5% discount.");
 			assertEquals(475.00, responseObject.getGrandTotal(), 0.0001);
 		} catch (Exception e) {
 			fail();
@@ -191,7 +191,7 @@ public class RetailStoreDiscountControllerTests {
 			String content = response.getContentAsString();
 			OrderResponse responseObject = this.mapFromJson(content, OrderResponse.class);
 			System.out.println("Create Order responseObject: " + responseObject.toString());
-			printBill(responseObject);
+			printBill(responseObject, "The percentage based discounts do not apply on groceries.");
 			assertEquals(50.00, responseObject.getGrandTotal(), 0.0001);
 		} catch (Exception e) {
 			fail();
@@ -218,7 +218,7 @@ public class RetailStoreDiscountControllerTests {
 			String content = response.getContentAsString();
 			OrderResponse responseObject = this.mapFromJson(content, OrderResponse.class);
 			System.out.println("Create Order responseObject: " + responseObject.toString());
-			printBill(responseObject);
+			printBill(responseObject, "A user can get only one of the percentage based discounts on a bill.");
 			assertEquals(1900.00, responseObject.getGrandTotal(), 0.0001);
 		} catch (Exception e) {
 			fail();
@@ -242,7 +242,7 @@ public class RetailStoreDiscountControllerTests {
 			String content = response.getContentAsString();
 			OrderResponse responseObject = this.mapFromJson(content, OrderResponse.class);
 			System.out.println("Create Order responseObject: " + responseObject.toString());
-			printBill(responseObject);
+			printBill(responseObject, "For user ordered multiple products");
 			assertEquals(6940.00, responseObject.getGrandTotal(), 0.0001);
 		} catch (Exception e) {
 			fail();
@@ -435,9 +435,10 @@ public class RetailStoreDiscountControllerTests {
 		return objectMapper.readValue(json, clazz);
 	}
 	
-	private void printBill(OrderResponse response) {
+	private void printBill(OrderResponse response, String message) {
 		System.out.println("\n\n*****************************");
 		System.out.println("*****Start bill printing****");
+		System.out.println("*****For: "+message +"****");
 		System.out.println("*****************************");
 		System.out.println(response.getStoreUser().toString());
 		List<Product> products = response.getProducts();
