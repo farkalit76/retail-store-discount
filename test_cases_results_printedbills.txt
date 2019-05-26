@@ -1,0 +1,390 @@
+
+C:\Farkalit\Projects\DEV\workspace-sts\retail-store-discount>mvn clean install
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building retail-store-discount 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ retail-store-discount ---
+[INFO] Deleting C:\Farkalit\Projects\DEV\workspace-sts\retail-store-discount\target
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.8.3:prepare-agent (jacoco-initialize) @ retail-store-discount ---
+[INFO] argLine set to -javaagent:C:\\mobile_ibe_env\\maven_local_repo_egit_333\\org\\jacoco\\org.jacoco.agent\\0.8.3\\org.jacoco.agent-0.8.3-runtime.jar=destfile=C:\\Farkalit\\Projects\\DEV\\workspace-sts\\retail-store-discount\\target\\jacoco.exec,excludes=**/com/farkalit/retailstore/dto/**:**/com/farkalit/retailstore/entity/**:**/com/farkalit/retailstore/constant/**:**/com/farkalit/retailstore/config/**:**/com/farkalit/retailstore/exception/**
+[INFO]
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ retail-store-discount ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ retail-store-discount ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 16 source files to C:\Farkalit\Projects\DEV\workspace-sts\retail-store-discount\target\classes
+[INFO] /C:/Farkalit/Projects/DEV/workspace-sts/retail-store-discount/src/main/java/com/farkalit/retailstore/helper/DateHelper.java: Some input files use or override a deprecated API.
+[INFO] /C:/Farkalit/Projects/DEV/workspace-sts/retail-store-discount/src/main/java/com/farkalit/retailstore/helper/DateHelper.java: Recompile with -Xlint:deprecation for details.
+[INFO]
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ retail-store-discount ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Farkalit\Projects\DEV\workspace-sts\retail-store-discount\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ retail-store-discount ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to C:\Farkalit\Projects\DEV\workspace-sts\retail-store-discount\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ retail-store-discount ---
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.farkalit.retailstore.test.OrderHelperTest
+16:16:39,785 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:16:39,786 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+16:16:39,786 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Farkalit/Projects/DEV/workspace-sts/retail-store-discount/target/classes/logback.xml]
+16:16:39,959 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+16:16:39,974 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@e4d2696 - Adding [jar:file:/C:/mobile_ibe_env/maven_local_repo_egit_333/org/springframework/boot/spring-boot/2.1.2.RELEASE/spring-boot-2.1.2.RELEASE.jar!/org/springframework/boot/logging/logback/base.xml] to configuration watch list.
+16:16:39,974 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@6e0f7aad - URL [jar:file:/C:/mobile_ibe_env/maven_local_repo_egit_333/org/springframework/boot/spring-boot/2.1.2.RELEASE/spring-boot-2.1.2.RELEASE.jar!/org/springframework/boot/logging/logback/base.xml] is not of type file
+16:16:39,979 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@e4d2696 - Adding [jar:file:/C:/mobile_ibe_env/maven_local_repo_egit_333/org/springframework/boot/spring-boot/2.1.2.RELEASE/spring-boot-2.1.2.RELEASE.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+16:16:39,979 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@6e0f7aad - URL [jar:file:/C:/mobile_ibe_env/maven_local_repo_egit_333/org/springframework/boot/spring-boot/2.1.2.RELEASE/spring-boot-2.1.2.RELEASE.jar!/org/springframework/boot/logging/logback/defaults.xml] is not of type file
+16:16:39,983 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+16:16:39,983 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+16:16:39,983 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+16:16:39,992 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+16:16:39,992 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+16:16:39,992 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+16:16:39,992 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+16:16:39,992 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+16:16:39,992 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+16:16:39,994 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+16:16:39,994 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@e4d2696 - Adding [jar:file:/C:/mobile_ibe_env/maven_local_repo_egit_333/org/springframework/boot/spring-boot/2.1.2.RELEASE/spring-boot-2.1.2.RELEASE.jar!/org/springframework/boot/logging/logback/console-appender.xml] to configuration watch list.
+16:16:39,994 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@6e0f7aad - URL [jar:file:/C:/mobile_ibe_env/maven_local_repo_egit_333/org/springframework/boot/spring-boot/2.1.2.RELEASE/spring-boot-2.1.2.RELEASE.jar!/org/springframework/boot/logging/logback/console-appender.xml] is not of type file
+16:16:39,995 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:16:40,004 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [CONSOLE]
+16:16:40,020 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:16:40,112 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@e4d2696 - Adding [jar:file:/C:/mobile_ibe_env/maven_local_repo_egit_333/org/springframework/boot/spring-boot/2.1.2.RELEASE/spring-boot-2.1.2.RELEASE.jar!/org/springframework/boot/logging/logback/file-appender.xml] to configuration watch list.
+16:16:40,112 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@6e0f7aad - URL [jar:file:/C:/mobile_ibe_env/maven_local_repo_egit_333/org/springframework/boot/spring-boot/2.1.2.RELEASE/spring-boot-2.1.2.RELEASE.jar!/org/springframework/boot/logging/logback/file-appender.xml] is not of type file
+16:16:40,114 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:16:40,125 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+16:16:40,126 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:16:40,145 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@368802354 - Archive files will be limited to [10 MB] each.
+16:16:40,155 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@368802354 - Will use gz compression
+16:16:40,159 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@368802354 - Will use the pattern C:/Users/s730791/AppData/Local/Temp//spring.log.%d{yyyy-MM-dd}.%i for the active file
+16:16:40,166 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@257cc1fc - The date pattern is 'yyyy-MM-dd' from file name pattern 'C:/Users/s730791/AppData/Local/Temp//spring.log.%d{yyyy-MM-dd}.%i.gz'.
+16:16:40,166 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@257cc1fc - Roll-over at midnight.
+16:16:40,170 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@257cc1fc - Setting initial period to Sun May 26 16:06:30 GST 2019
+16:16:40,186 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: C:\Users\s730791\AppData\Local\Temp\/spring.log
+16:16:40,186 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [C:\Users\s730791\AppData\Local\Temp\/spring.log]
+16:16:40,189 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+16:16:40,189 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [CONSOLE] to Logger[ROOT]
+16:16:40,191 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+16:16:40,191 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework.web] to DEBUG
+16:16:40,191 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:16:40,192 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+16:16:40,192 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:16:40,193 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:16:40,193 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+16:16:40,197 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1122118227 - No compression will be used
+16:16:40,197 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1122118227 - Will use the pattern logs/retail-store-service.%d{yyyy-MM-dd}_%i.log for the active file
+16:16:40,198 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@57adfab0 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/retail-store-service.%d{yyyy-MM-dd}_%i.log'.
+16:16:40,198 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@57adfab0 - Roll-over at midnight.
+16:16:40,199 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@57adfab0 - Setting initial period to Sun May 26 16:06:30 GST 2019
+16:16:40,202 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@57adfab0 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:16:40,202 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@57adfab0 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:16:40,203 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:16:40,204 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: logs/retail-store-service.log
+16:16:40,204 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [logs/retail-store-service.log]
+16:16:40,205 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+16:16:40,205 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+16:16:40,205 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+16:16:40,208 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@1949309d - Registering current configuration as safe fallback point
+
+2019-05-26 16:16:40.616  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.farkalit.retailstore.test.OrderHelperTest], using SpringBootContextLoader
+2019-05-26 16:16:40.643  INFO   --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.farkalit.retailstore.test.OrderHelperTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-05-26 16:16:40.683  INFO   --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.farkalit.retailstore.test.OrderHelperTest]: OrderHelperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-05-26 16:16:41.202  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.farkalit.retailstore.RetailStoreDiscountApplication for test class com.farkalit.retailstore.test.OrderHelperTest
+2019-05-26 16:16:41.540  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-05-26 16:16:41.585  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@16df9bde, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@478530cb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5be7b749, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@44aeae34, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2ec5cc14, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@40a8a26f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@269308cc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@177ddd24, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@17d816b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@126675fd]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.2.RELEASE)
+
+2019-05-26 16:16:42.484  INFO 22416 --- [           main] c.f.retailstore.test.OrderHelperTest     : Starting OrderHelperTest on NB3121721314 with PID 22416 (started by S785410 in C:\Farkalit\Projects\DEV\workspace-sts\retail-store-discount)
+2019-05-26 16:16:42.487  INFO 22416 --- [           main] c.f.retailstore.test.OrderHelperTest     : No active profile set, falling back to default profiles: default
+2019-05-26 16:16:42.720 DEBUG 22416 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@63318b56
+2019-05-26 16:16:48.023 DEBUG 22416 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2019-05-26 16:16:48.762  INFO 22416 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-05-26 16:16:49.218  INFO 22416 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-26 16:16:49.790 DEBUG 22416 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-05-26 16:16:50.089  INFO 22416 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-26 16:16:50.148 DEBUG 22416 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-05-26 16:16:50.293 DEBUG 22416 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-05-26 16:16:50.335 DEBUG 22416 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-05-26 16:16:50.973  INFO 22416 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-26 16:16:51.068  INFO 22416 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-26 16:16:51.159  INFO 22416 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-26 16:16:51.569  INFO 22416 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2019-05-26 16:16:51.574  INFO 22416 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2019-05-26 16:16:51.586  INFO 22416 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2019-05-26 16:16:51.745  INFO 22416 --- [           main] c.f.retailstore.test.OrderHelperTest     : Started OrderHelperTest in 9.998 seconds (JVM running for 13.225)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.809 s - in com.farkalit.retailstore.test.OrderHelperTest
+[INFO] Running com.farkalit.retailstore.test.RetailStoreDiscountControllerTests
+2019-05-26 16:16:52.342  INFO 22416 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.farkalit.retailstore.test.RetailStoreDiscountControllerTests], using SpringBootContextLoader
+2019-05-26 16:16:52.344  INFO 22416 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.farkalit.retailstore.test.RetailStoreDiscountControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-05-26 16:16:52.361  INFO 22416 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.farkalit.retailstore.test.RetailStoreDiscountControllerTests]: RetailStoreDiscountControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-05-26 16:16:52.458  INFO 22416 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.farkalit.retailstore.RetailStoreDiscountApplication for test class com.farkalit.retailstore.test.RetailStoreDiscountControllerTests
+2019-05-26 16:16:52.461  INFO 22416 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-05-26 16:16:52.463  INFO 22416 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4fdf322f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7f6c983b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4f410099, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2f50381f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@19283990, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@21ed7ce, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@459c4adc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6ba212b0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@331e52ed, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@47ca43e7]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.2.RELEASE)
+
+2019-05-26 16:16:52.577  INFO 22416 --- [           main] f.r.t.RetailStoreDiscountControllerTests : Starting RetailStoreDiscountControllerTests on NB3121721314 with PID 22416 (started by S785410 in C:\Farkalit\Projects\DEV\workspace-sts\retail-store-discount)
+2019-05-26 16:16:52.580  INFO 22416 --- [           main] f.r.t.RetailStoreDiscountControllerTests : No active profile set, falling back to default profiles: default
+2019-05-26 16:16:52.590 DEBUG 22416 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@69d0e9b0
+2019-05-26 16:16:53.727 DEBUG 22416 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-05-26 16:16:53.885  INFO 22416 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-26 16:16:53.904 DEBUG 22416 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-05-26 16:16:53.933 DEBUG 22416 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-05-26 16:16:53.954 DEBUG 22416 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-05-26 16:16:53.974 DEBUG 22416 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-05-26 16:16:54.101  INFO 22416 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-05-26 16:16:54.102  INFO 22416 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-05-26 16:16:54.140  INFO 22416 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 38 ms
+2019-05-26 16:16:54.171  INFO 22416 --- [           main] f.r.t.RetailStoreDiscountControllerTests : Started RetailStoreDiscountControllerTests in 1.696 seconds (JVM running for 15.651)
+2019-05-26 16:16:54.279 DEBUG 22416 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.farkalit.retailstore.entity.StoreUser com.farkalit.retailstore.web.controller.RetailStoreDiscountController.getUser(java.lang.String) throws com.farkalit.retailstore.exception.RetailStoreException
+2019-05-26 16:16:54.329  INFO 22416 --- [           main] c.f.r.w.c.RetailStoreDiscountController  : getUser started...
+2019-05-26 16:16:54.369 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json]
+2019-05-26 16:16:54.455 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Writing [User [userId=ABC101, name=Usman, type=EMPLOYEE, creationDate=Wed Oct 19 00:00:00 GST 2005]]
+User Response: {"userId":"ABC101","name":"Usman","type":"EMPLOYEE","creationDate":"2005-10-18T20:00:00.000+0000"}
+User found for Id:ABC104
+DAO getProduct started...
+2019-05-26 16:16:54.579 DEBUG 22416 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.farkalit.retailstore.dto.OrderResponse com.farkalit.retailstore.web.controller.RetailStoreDiscountController.createOrder(com.farkalit.retailstore.dto.OrderRequest) throws com.farkalit.retailstore.exception.RetailStoreException
+2019-05-26 16:16:54.752 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [OrderRequest [storeUser=User [userId=ABC104, name=Monika, type=CUSTOMER, creationDate=Tue May 05 00: (truncated)...]
+2019-05-26 16:16:54.762  INFO 22416 --- [           main] c.f.r.w.c.RetailStoreDiscountController  : createOrder started...
+Period: Year:4 month:0 days:21
+2019-05-26 16:16:54.776 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json]
+2019-05-26 16:16:54.783 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Writing [OrderResponse [storeUser=User [userId=ABC104, name=Monika, type=CUSTOMER, creationDate=Tue May 05 00:00:00 GST 2015], products=[Product [prodId=pr104, name=Apple, type=GROCERIES, price=50.0]], discountPercentage=0.0, discountAmount=0.0, grandTotal=50.0, nonDiscountedAmount=50.0]]
+Create Order Response: {"storeUser":{"userId":"ABC104","name":"Monika","type":"CUSTOMER","creationDate":"2015-05-04T20:00:00.000+0000"},"products":[{"prodId":"pr104","name":"Apple","type":"GROCERIES","price":50.0}],"discountPercentage":0.0,"discountAmount":0.0,"grandTotal":50.0,"nonDiscountedAmount":50.0}
+Create Order responseObject: OrderResponse [storeUser=User [userId=ABC104, name=Monika, type=CUSTOMER, creationDate=Tue May 05 00:00:00 GST 2015], products=[Product [prodId=pr104, name=Apple, type=GROCERIES, price=50.0]], discountPercentage=0.0, discountAmount=0.0, grandTotal=50.0, nonDiscountedAmount=50.0]
+
+
+*****************************
+*****Start bill printing****
+*****For: The percentage based discounts do not apply on groceries.****
+*****************************
+User [userId=ABC104, name=Monika, type=CUSTOMER, creationDate=Tue May 05 00:00:00 GST 2015]
+Product [prodId=pr104, name=Apple, type=GROCERIES, price=50.0]
+Discount 0.0% for non groceries Items only: $0.0
+ ***Grand Total: $50.0
+****************************
+Non Discounted Amount : $50.0
+********Bill End***********
+
+
+
+2019-05-26 16:16:54.835 DEBUG 22416 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.farkalit.retailstore.entity.Product> com.farkalit.retailstore.web.controller.RetailStoreDiscountController.getProduct() throws com.farkalit.retailstore.exception.RetailStoreException
+2019-05-26 16:16:54.837  INFO 22416 --- [           main] c.f.r.w.c.RetailStoreDiscountController  : getProduct started...
+2019-05-26 16:16:54.850 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json]
+2019-05-26 16:16:54.857 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Product [prodId=pr101, name=Laptop, type=ELECTRONICS, price=2000.0]]]
+Product Response: [{"prodId":"pr101","name":"Laptop","type":"ELECTRONICS","price":2000.0}]
+User found for Id:ABC103
+DAO getProduct started...
+2019-05-26 16:16:54.973 DEBUG 22416 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.farkalit.retailstore.dto.OrderResponse com.farkalit.retailstore.web.controller.RetailStoreDiscountController.createOrder(com.farkalit.retailstore.dto.OrderRequest) throws com.farkalit.retailstore.exception.RetailStoreException
+2019-05-26 16:16:54.975 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [OrderRequest [storeUser=User [userId=ABC103, name=Fasin, type=CUSTOMER, creationDate=Fri May 05 00:0 (truncated)...]
+2019-05-26 16:16:54.976  INFO 22416 --- [           main] c.f.r.w.c.RetailStoreDiscountController  : createOrder started...
+Period: Year:2 month:0 days:21
+2019-05-26 16:16:54.978 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json]
+2019-05-26 16:16:54.979 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Writing [OrderResponse [storeUser=User [userId=ABC103, name=Fasin, type=CUSTOMER, creationDate=Fri May 05 00:00:00 GST 2017], products=[Product [prodId=pr103, name=Fan, type=ELECTRONICS, price=500.0]], discountPercentage=5.0, discountAmount=25.0, grandTotal=475.0, nonDiscountedAmount=0.0]]
+Create Order Response: {"storeUser":{"userId":"ABC103","name":"Fasin","type":"CUSTOMER","creationDate":"2017-05-04T20:00:00.000+0000"},"products":[{"prodId":"pr103","name":"Fan","type":"ELECTRONICS","price":500.0}],"discountPercentage":5.0,"discountAmount":25.0,"grandTotal":475.0,"nonDiscountedAmount":0.0}
+Create Order responseObject: OrderResponse [storeUser=User [userId=ABC103, name=Fasin, type=CUSTOMER, creationDate=Fri May 05 00:00:00 GST 2017], products=[Product [prodId=pr103, name=Fan, type=ELECTRONICS, price=500.0]], discountPercentage=5.0, discountAmount=25.0, grandTotal=475.0, nonDiscountedAmount=0.0]
+
+
+*****************************
+*****Start bill printing****
+*****For: If the user has been a customer for over 2 years, he gets a 5% discount.****
+*****************************
+User [userId=ABC103, name=Fasin, type=CUSTOMER, creationDate=Fri May 05 00:00:00 GST 2017]
+Product [prodId=pr103, name=Fan, type=ELECTRONICS, price=500.0]
+Discount 5.0% for non groceries Items only: $25.0
+ ***Grand Total: $475.0
+********Bill End***********
+
+
+
+User found for Id:ABC102
+DAO getProduct started...
+2019-05-26 16:16:55.023 DEBUG 22416 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.farkalit.retailstore.dto.OrderResponse com.farkalit.retailstore.web.controller.RetailStoreDiscountController.createOrder(com.farkalit.retailstore.dto.OrderRequest) throws com.farkalit.retailstore.exception.RetailStoreException
+2019-05-26 16:16:55.027 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [OrderRequest [storeUser=User [userId=ABC102, name=Harsh, type=AFFILIATE, creationDate=Thu Oct 20 00: (truncated)...]
+2019-05-26 16:16:55.032  INFO 22416 --- [           main] c.f.r.w.c.RetailStoreDiscountController  : createOrder started...
+2019-05-26 16:16:55.033 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json]
+2019-05-26 16:16:55.034 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Writing [OrderResponse [storeUser=User [userId=ABC102, name=Harsh, type=AFFILIATE, creationDate=Thu Oct 20 00:00:00 GST 2005], products=[Product [prodId=pr102, name=AirCondition, type=ELECTRONICS, price=3500.0]], discountPercentage=10.0, discountAmount=350.0, grandTotal=3150.0, nonDiscountedAmount=0.0]]
+Create Order Response: {"storeUser":{"userId":"ABC102","name":"Harsh","type":"AFFILIATE","creationDate":"2005-10-19T20:00:00.000+0000"},"products":[{"prodId":"pr102","name":"AirCondition","type":"ELECTRONICS","price":3500.0}],"discountPercentage":10.0,"discountAmount":350.0,"grandTotal":3150.0,"nonDiscountedAmount":0.0}
+Create Order responseObject: OrderResponse [storeUser=User [userId=ABC102, name=Harsh, type=AFFILIATE, creationDate=Thu Oct 20 00:00:00 GST 2005], products=[Product [prodId=pr102, name=AirCondition, type=ELECTRONICS, price=3500.0]], discountPercentage=10.0, discountAmount=350.0, grandTotal=3150.0, nonDiscountedAmount=0.0]
+
+
+*****************************
+*****Start bill printing****
+*****For: If the user is an affiliate of the store, he gets a 10% discount.****
+*****************************
+User [userId=ABC102, name=Harsh, type=AFFILIATE, creationDate=Thu Oct 20 00:00:00 GST 2005]
+Product [prodId=pr102, name=AirCondition, type=ELECTRONICS, price=3500.0]
+Discount 10.0% for non groceries Items only: $350.0
+ ***Grand Total: $3150.0
+********Bill End***********
+
+
+
+User found for Id:ABC105
+DAO getProduct started...
+2019-05-26 16:16:55.069 DEBUG 22416 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.farkalit.retailstore.dto.OrderResponse com.farkalit.retailstore.web.controller.RetailStoreDiscountController.createOrder(com.farkalit.retailstore.dto.OrderRequest) throws com.farkalit.retailstore.exception.RetailStoreException
+2019-05-26 16:16:55.075 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [OrderRequest [storeUser=User [userId=ABC105, name=Masroor, type=OTHER, creationDate=Fri May 05 00:00 (truncated)...]
+2019-05-26 16:16:55.076  INFO 22416 --- [           main] c.f.r.w.c.RetailStoreDiscountController  : createOrder started...
+2019-05-26 16:16:55.077 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json]
+2019-05-26 16:16:55.080 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Writing [OrderResponse [storeUser=User [userId=ABC105, name=Masroor, type=OTHER, creationDate=Fri May 05 00:00:00 GST 2017], products=[Product [prodId=pr101, name=Laptop, type=ELECTRONICS, price=2000.0], Product [prodId=pr102, name=AirCondition, type=ELECTRONICS, price=3500.0], Product [prodId=pr103, name=Fan, type=ELECTRONICS, price=500.0], Product [prodId=pr104, name=Apple, type=GROCERIES, price=50.0], Product [prodId=pr105, name=Shirt, type=CLOTHES, price=250.0], Product [prodId=pr106, name=Blanket, type=CLOTHES, price=1000.0]], discountPercentage=5.0, discountAmount=360.0, grandTotal=6940.0, nonDiscountedAmount=50.0]]
+Create Order Response: {"storeUser":{"userId":"ABC105","name":"Masroor","type":"OTHER","creationDate":"2017-05-04T20:00:00.000+0000"},"products":[{"prodId":"pr101","name":"Laptop","type":"ELECTRONICS","price":2000.0},{"prodId":"pr102","name":"AirCondition","type":"ELECTRONICS","price":3500.0},{"prodId":"pr103","name":"Fan","type":"ELECTRONICS","price":500.0},{"prodId":"pr104","name":"Apple","type":"GROCERIES","price":50.0},{"prodId":"pr105","name":"Shirt","type":"CLOTHES","price":250.0},{"prodId":"pr106","name":"Blanket","type":"CLOTHES","price":1000.0}],"discountPercentage":5.0,"discountAmount":360.0,"grandTotal":6940.0,"nonDiscountedAmount":50.0}
+Create Order responseObject: OrderResponse [storeUser=User [userId=ABC105, name=Masroor, type=OTHER, creationDate=Fri May 05 00:00:00 GST 2017], products=[Product [prodId=pr101, name=Laptop, type=ELECTRONICS, price=2000.0], Product [prodId=pr102, name=AirCondition, type=ELECTRONICS, price=3500.0], Product [prodId=pr103, name=Fan, type=ELECTRONICS, price=500.0], Product [prodId=pr104, name=Apple, type=GROCERIES, price=50.0], Product [prodId=pr105, name=Shirt, type=CLOTHES, price=250.0], Product [prodId=pr106, name=Blanket, type=CLOTHES, price=1000.0]], discountPercentage=5.0, discountAmount=360.0, grandTotal=6940.0, nonDiscountedAmount=50.0]
+
+
+*****************************
+*****Start bill printing****
+*****For: For user ordered multiple products****
+*****************************
+User [userId=ABC105, name=Masroor, type=OTHER, creationDate=Fri May 05 00:00:00 GST 2017]
+Product [prodId=pr101, name=Laptop, type=ELECTRONICS, price=2000.0]
+Product [prodId=pr102, name=AirCondition, type=ELECTRONICS, price=3500.0]
+Product [prodId=pr103, name=Fan, type=ELECTRONICS, price=500.0]
+Product [prodId=pr104, name=Apple, type=GROCERIES, price=50.0]
+Product [prodId=pr105, name=Shirt, type=CLOTHES, price=250.0]
+Product [prodId=pr106, name=Blanket, type=CLOTHES, price=1000.0]
+Discount 5.0% for non groceries Items only: $360.0
+ ***Grand Total: $6940.0
+****************************
+Non Discounted Amount : $50.0
+********Bill End***********
+
+
+
+User found for Id:ABC101
+DAO getProduct started...
+2019-05-26 16:16:55.126 DEBUG 22416 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.farkalit.retailstore.dto.OrderResponse com.farkalit.retailstore.web.controller.RetailStoreDiscountController.createOrder(com.farkalit.retailstore.dto.OrderRequest) throws com.farkalit.retailstore.exception.RetailStoreException
+2019-05-26 16:16:55.127 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [OrderRequest [storeUser=User [userId=ABC101, name=Usman, type=EMPLOYEE, creationDate=Thu Oct 20 00:0 (truncated)...]
+2019-05-26 16:16:55.128  INFO 22416 --- [           main] c.f.r.w.c.RetailStoreDiscountController  : createOrder started...
+2019-05-26 16:16:55.129 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json]
+2019-05-26 16:16:55.133 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Writing [OrderResponse [storeUser=User [userId=ABC101, name=Usman, type=EMPLOYEE, creationDate=Thu Oct 20 00:00:00 GST 2005], products=[Product [prodId=pr101, name=Laptop, type=ELECTRONICS, price=2000.0]], discountPercentage=30.0, discountAmount=600.0, grandTotal=1400.0, nonDiscountedAmount=0.0]]
+Create Order Response: {"storeUser":{"userId":"ABC101","name":"Usman","type":"EMPLOYEE","creationDate":"2005-10-19T20:00:00.000+0000"},"products":[{"prodId":"pr101","name":"Laptop","type":"ELECTRONICS","price":2000.0}],"discountPercentage":30.0,"discountAmount":600.0,"grandTotal":1400.0,"nonDiscountedAmount":0.0}
+Create Order responseObject: OrderResponse [storeUser=User [userId=ABC101, name=Usman, type=EMPLOYEE, creationDate=Thu Oct 20 00:00:00 GST 2005], products=[Product [prodId=pr101, name=Laptop, type=ELECTRONICS, price=2000.0]], discountPercentage=30.0, discountAmount=600.0, grandTotal=1400.0, nonDiscountedAmount=0.0]
+
+
+*****************************
+*****Start bill printing****
+*****For: If the user is an employee of the store, he gets a 30% discount.****
+*****************************
+User [userId=ABC101, name=Usman, type=EMPLOYEE, creationDate=Thu Oct 20 00:00:00 GST 2005]
+Product [prodId=pr101, name=Laptop, type=ELECTRONICS, price=2000.0]
+Discount 30.0% for non groceries Items only: $600.0
+ ***Grand Total: $1400.0
+********Bill End***********
+
+
+
+User found for Id:ABC105
+DAO getProduct started...
+2019-05-26 16:16:55.166 DEBUG 22416 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.farkalit.retailstore.dto.OrderResponse com.farkalit.retailstore.web.controller.RetailStoreDiscountController.createOrder(com.farkalit.retailstore.dto.OrderRequest) throws com.farkalit.retailstore.exception.RetailStoreException
+2019-05-26 16:16:55.167 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [OrderRequest [storeUser=User [userId=ABC105, name=Masroor, type=OTHER, creationDate=Fri May 05 00:00 (truncated)...]
+2019-05-26 16:16:55.168  INFO 22416 --- [           main] c.f.r.w.c.RetailStoreDiscountController  : createOrder started...
+2019-05-26 16:16:55.168 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json]
+2019-05-26 16:16:55.169 DEBUG 22416 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Writing [OrderResponse [storeUser=User [userId=ABC105, name=Masroor, type=OTHER, creationDate=Fri May 05 00:00:00 GST 2017], products=[Product [prodId=pr101, name=Laptop, type=ELECTRONICS, price=2000.0]], discountPercentage=5.0, discountAmount=100.0, grandTotal=1900.0, nonDiscountedAmount=0.0]]
+Create Order Response: {"storeUser":{"userId":"ABC105","name":"Masroor","type":"OTHER","creationDate":"2017-05-04T20:00:00.000+0000"},"products":[{"prodId":"pr101","name":"Laptop","type":"ELECTRONICS","price":2000.0}],"discountPercentage":5.0,"discountAmount":100.0,"grandTotal":1900.0,"nonDiscountedAmount":0.0}
+Create Order responseObject: OrderResponse [storeUser=User [userId=ABC105, name=Masroor, type=OTHER, creationDate=Fri May 05 00:00:00 GST 2017], products=[Product [prodId=pr101, name=Laptop, type=ELECTRONICS, price=2000.0]], discountPercentage=5.0, discountAmount=100.0, grandTotal=1900.0, nonDiscountedAmount=0.0]
+
+
+*****************************
+*****Start bill printing****
+*****For: A user can get only one of the percentage based discounts on a bill.****
+*****************************
+User [userId=ABC105, name=Masroor, type=OTHER, creationDate=Fri May 05 00:00:00 GST 2017]
+Product [prodId=pr101, name=Laptop, type=ELECTRONICS, price=2000.0]
+Discount 5.0% for non groceries Items only: $100.0
+ ***Grand Total: $1900.0
+********Bill End***********
+
+
+
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.879 s - in com.farkalit.retailstore.test.RetailStoreDiscountControllerTests
+[INFO] Running com.farkalit.retailstore.test.RetailStoreServiceTest
+2019-05-26 16:16:55.188  INFO 22416 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.farkalit.retailstore.test.RetailStoreServiceTest], using SpringBootContextLoader
+2019-05-26 16:16:55.190  INFO 22416 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.farkalit.retailstore.test.RetailStoreServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-05-26 16:16:55.191  INFO 22416 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.farkalit.retailstore.test.RetailStoreServiceTest]: RetailStoreServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-05-26 16:16:55.200  INFO 22416 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.farkalit.retailstore.RetailStoreDiscountApplication for test class com.farkalit.retailstore.test.RetailStoreServiceTest
+2019-05-26 16:16:55.203  INFO 22416 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-05-26 16:16:55.212  INFO 22416 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c143ceb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@188e789a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6e17fc2b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@17ee90a2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3ab015d0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5111f0b4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@36b819, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@63be533d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@591ac40f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7d00bc8]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.2.RELEASE)
+
+2019-05-26 16:16:55.292  INFO 22416 --- [           main] c.f.r.test.RetailStoreServiceTest        : Starting RetailStoreServiceTest on NB3121721314 with PID 22416 (started by S785410 in C:\Farkalit\Projects\DEV\workspace-sts\retail-store-discount)
+2019-05-26 16:16:55.294  INFO 22416 --- [           main] c.f.r.test.RetailStoreServiceTest        : No active profile set, falling back to default profiles: default
+2019-05-26 16:16:55.302 DEBUG 22416 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@325b2e79
+2019-05-26 16:16:56.665 DEBUG 22416 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2019-05-26 16:16:57.035  INFO 22416 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-05-26 16:16:57.212  INFO 22416 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-26 16:16:57.466 DEBUG 22416 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-05-26 16:16:57.639  INFO 22416 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-26 16:16:57.675 DEBUG 22416 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-05-26 16:16:57.718 DEBUG 22416 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-05-26 16:16:57.745 DEBUG 22416 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-05-26 16:16:58.108  INFO 22416 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-26 16:16:58.110  INFO 22416 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-26 16:16:58.121  INFO 22416 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-26 16:16:58.197  INFO 22416 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2019-05-26 16:16:58.206  INFO 22416 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2019-05-26 16:16:58.212  INFO 22416 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2019-05-26 16:16:58.265  INFO 22416 --- [           main] c.f.r.test.RetailStoreServiceTest        : Started RetailStoreServiceTest in 3.042 seconds (JVM running for 19.745)
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.789 s - in com.farkalit.retailstore.test.RetailStoreServiceTest
+2019-05-26 16:16:58.319 DEBUG 22416 --- [       Thread-8] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@69d0e9b0, started on Sun May 26 16:16:52 GST 2019
+2019-05-26 16:16:58.321 DEBUG 22416 --- [       Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@63318b56, started on Sun May 26 16:16:42 GST 2019
+2019-05-26 16:16:58.325 DEBUG 22416 --- [      Thread-12] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@325b2e79, started on Sun May 26 16:16:55 GST 2019
+2019-05-26 16:16:58.338  INFO 22416 --- [       Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-26 16:16:58.341  INFO 22416 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-26 16:16:58.346  INFO 22416 --- [      Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- maven-jar-plugin:3.1.1:jar (default-jar) @ retail-store-discount ---
+[INFO] Building jar: C:\Farkalit\Projects\DEV\workspace-sts\retail-store-discount\target\retail-store-discount-0.0.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.8.3:report (jacoco-site) @ retail-store-discount ---
+[INFO] Loading execution data file C:\Farkalit\Projects\DEV\workspace-sts\retail-store-discount\target\jacoco.exec
+[INFO] Analyzed bundle 'retail-store-discount' with 7 classes
+[INFO]
+[INFO] --- spring-boot-maven-plugin:2.1.2.RELEASE:repackage (repackage) @ retail-store-discount ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO]
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ retail-store-discount ---
+[INFO] Installing C:\Farkalit\Projects\DEV\workspace-sts\retail-store-discount\target\retail-store-discount-0.0.1-SNAPSHOT.jar to C:\mobile_ibe_env\maven_local_repo_egit_333\com\farkalit\retailstore\retail-store-discount\0.0.1-SNAPSHOT\retail-store-discount-0.0.1-SNAPSHOT.jar
+[INFO] Installing C:\Farkalit\Projects\DEV\workspace-sts\retail-store-discount\pom.xml to C:\mobile_ibe_env\maven_local_repo_egit_333\com\farkalit\retailstore\retail-store-discount\0.0.1-SNAPSHOT\retail-store-discount-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 59.451 s
+[INFO] Finished at: 2019-05-26T16:17:05+04:00
+[INFO] Final Memory: 43M/332M
+[INFO] ------------------------------------------------------------------------
+[WARNING] The requested profile "prod" could not be activated because it does not exist.
