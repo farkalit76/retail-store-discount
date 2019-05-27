@@ -6,6 +6,8 @@ package com.farkalit.retailstore.dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
 import com.farkalit.retailstore.constant.StoreConstants;
@@ -24,6 +26,7 @@ import com.farkalit.retailstore.helper.DateHelper;
 @Repository
 public class RetailStoreDAO implements IRetailStoreDAO{
 
+	private static final Logger LOG = LoggerFactory.getLogger(RetailStoreDAO.class);
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -35,11 +38,11 @@ public class RetailStoreDAO implements IRetailStoreDAO{
 		for (StoreUser user : users) {
 			if(user.getUserId().equals(userId))
 			{
-				System.out.println("User found for Id:"+userId);
+				LOG.info("User found for Id: {}", userId);
 				return user;
 			}
 		}
-		System.out.println("User NOT found for Id:"+userId);
+		LOG.info("User NOT found for Id:{} ", userId);
 		return null;
 	}
 
@@ -50,7 +53,7 @@ public class RetailStoreDAO implements IRetailStoreDAO{
 	 */
 	public List<Product> getProducts() throws RetailStoreException {
 		
-		System.out.println("DAO getProduct started...");
+		LOG.info("DAO getProduct started...");
 		
 		List<Product> products = new ArrayList<>();
 		

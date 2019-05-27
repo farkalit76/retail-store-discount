@@ -397,7 +397,7 @@ public class RetailStoreDiscountControllerTests {
 
 		StoreUser user1 = new StoreUser("ABC101", "Usman", StoreConstants.USER_EMPLOYEE, DateHelper.getDate(2005, 10, 20));
 		StoreUser user2 = new StoreUser("ABC102", "Harsh", StoreConstants.USER_AFFILIATE, DateHelper.getDate(2005, 10, 20));
-		StoreUser user3 = new StoreUser("ABC103", "Fasin", StoreConstants.USER_CUSTOMER, DateHelper.getDate(2017, 05, 05));
+		StoreUser user3 = new StoreUser("ABC103", "Fasin", StoreConstants.USER_CUSTOMER, DateHelper.getDate(2016, 05, 05));
 		StoreUser user4 = new StoreUser("ABC104", "Monika", StoreConstants.USER_CUSTOMER, DateHelper.getDate(2015, 05, 05));
 		StoreUser user5 = new StoreUser("ABC105", "Masroor", StoreConstants.USER_OTHER, DateHelper.getDate(2017, 05, 05));
 		StoreUser user6 = new StoreUser("ABC105", "Mixed", StoreConstants.USER_OTHER, DateHelper.getDate(2017, 05, 05));

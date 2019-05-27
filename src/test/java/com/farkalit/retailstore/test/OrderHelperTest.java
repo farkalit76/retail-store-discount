@@ -4,7 +4,6 @@
 package com.farkalit.retailstore.test;
 
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,11 +13,9 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.farkalit.retailstore.dto.OrderRequest;
 import com.farkalit.retailstore.dto.OrderResponse;
 import com.farkalit.retailstore.entity.Product;
 import com.farkalit.retailstore.entity.StoreUser;
-import com.farkalit.retailstore.exception.RetailStoreException;
 import com.farkalit.retailstore.helper.DateHelper;
 import com.farkalit.retailstore.helper.OrderHelper;
 
@@ -34,24 +31,17 @@ public class OrderHelperTest {
 
 	@Test
 	public void testOrderResponse() {
-		try {
-			OrderHelper.applyDiscount(getOrderResponse());
-			assertTrue(true);
-		} catch (RetailStoreException e) {
-			fail();
-		}
-
+		OrderHelper.applyDiscount(getOrderResponse());
+		assertTrue(true);
 	}
-	
-	private OrderResponse getOrderResponse()
-	{
+
+	private OrderResponse getOrderResponse() {
 		OrderResponse response = new OrderResponse();
 		response.setStoreUser(getUser());
 		response.setProducts(getProducts());
-
 		return response;
 	}
-	
+
 	private List<Product> getProducts() {
 
 		List<Product> products = new ArrayList<>();
@@ -74,5 +64,5 @@ public class OrderHelperTest {
 		user.setCreationDate(DateHelper.getDate(2005, 10, 19));
 		return user;
 	}
-	
+
 }

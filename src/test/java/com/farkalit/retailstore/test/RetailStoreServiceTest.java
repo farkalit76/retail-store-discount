@@ -3,7 +3,7 @@
  */
 package com.farkalit.retailstore.test;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 import java.util.ArrayList;
@@ -12,6 +12,7 @@ import java.util.List;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -24,8 +25,7 @@ import com.farkalit.retailstore.helper.DateHelper;
 import com.farkalit.retailstore.service.RetailStoreService;
 
 /**
- * @File name: RetailStoreServiceTest.java
- * This class .....
+ * @File name: RetailStoreServiceTest.java This class .....
  *
  * @author name: Farkalit Usman (S785410)
  * @Created on: 26 May 2019
@@ -34,18 +34,19 @@ import com.farkalit.retailstore.service.RetailStoreService;
 @SpringBootTest
 public class RetailStoreServiceTest {
 
-	@MockBean
+	@Autowired
 	private RetailStoreService retailStoreService;
 
 	@MockBean
-	private RetailStoreDAO storeDao;
+	private RetailStoreDAO retailStoreDao;
 
 	@Test
 	public void testGetProduct() {
 		try {
-			Mockito.when(storeDao.getProducts()).thenReturn(getProducts());
-			Mockito.when(retailStoreService.getProducts()).thenReturn(getProducts());
-			assertTrue(true);
+			RetailStoreService service = new RetailStoreService();
+			Mockito.when(retailStoreDao.getProducts()).thenReturn(getProducts());
+			List<Product> products = retailStoreService.getProducts();
+			assertEquals(1, products.size());
 		} catch (RetailStoreException e) {
 			fail();
 		}
@@ -54,14 +55,14 @@ public class RetailStoreServiceTest {
 	@Test
 	public void testGetUser() {
 		try {
-			Mockito.when(storeDao.getUser("ABC101")).thenReturn(getUser());
-			Mockito.when(retailStoreService.getUser("ABC101")).thenReturn(getUser());
-			assertTrue(true);
+			Mockito.when(retailStoreDao.getUser("ABC101")).thenReturn(getUser());
+			StoreUser user = retailStoreService.getUser("ABC101");
+			assertEquals("Usman", user.getName());
 		} catch (RetailStoreException e) {
 			fail();
 		}
 	}
-	
+
 	private List<Product> getProducts() {
 
 		List<Product> products = new ArrayList<>();

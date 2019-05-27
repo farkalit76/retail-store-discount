@@ -67,6 +67,7 @@
 						<exclude>**/com/farkalit/retailstore/constant/**</exclude> 
 						<exclude>**/com/farkalit/retailstore/config/**</exclude> 
 						<exclude>**/com/farkalit/retailstore/exception/**</exclude> 
+						<exclude>**/com/farkalit/retailstore/RetailStoreDiscountApplication.class</exclude>
 					</excludes>
 						
 				</configuration>

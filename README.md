@@ -16,3 +16,7 @@ If you want can change the test cases and re-run it.
 @See: ./test_cases_results_printedbills.txt For all the results
 @See: ./sequence-diagram.pdf for class and sequence diagram
 @See: ./unittest_jacoco_coverage.PNG for jacoco coverage with sonarlint
+
+Run the Application as a "Spring boo App" from STS: Then test it by following ways:
+@See: http://localhost:8080/swagger-ui.html
+@See: SoapUI/Postman you can test the application.
