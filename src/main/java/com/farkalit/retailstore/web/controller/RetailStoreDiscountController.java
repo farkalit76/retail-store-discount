@@ -46,7 +46,7 @@ public class RetailStoreDiscountController {
 	 * @throws RetailStoreException
 	 */
 	@RequestMapping(method = RequestMethod.GET, value = "/user", produces = "application/json")
-	public StoreUser getUser(@Valid String userId) throws RetailStoreException {
+	public StoreUser getUser(String userId) throws RetailStoreException {
 		LOG.info("getUser started...");
 		return retailStoreService.getUser(userId);
 	}
